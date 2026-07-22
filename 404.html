@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 - Page Not Found</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            min-height: 100vh;
+
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+            overflow: hidden;
+
+        }
+
+        .container {
+
+            text-align: center;
+
+            color: white;
+
+            padding: 40px;
+
+        }
+
+        .container h1 {
+
+            font-size: 180px;
+
+            line-height: 1;
+
+            font-weight: 700;
+
+        }
+
+        .container h2 {
+
+            margin-top: 20px;
+
+            font-size: 38px;
+
+        }
+
+        .container p {
+
+            margin-top: 20px;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            max-width: 650px;
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            margin-top: 40px;
+
+            text-decoration: none;
+
+            color: #2563eb;
+
+            background: white;
+
+            padding: 15px 35px;
+
+            border-radius: 40px;
+
+            font-weight: 600;
+
+            transition: .3s;
+
+        }
+
+        .btn:hover {
+
+            transform: translateY(-5px);
+
+        }
+
+        .circle {
+
+            position: absolute;
+
+            border-radius: 50%;
+
+            background: rgba(255, 255, 255, .08);
+
+            animation: float 8s infinite linear;
+
+        }
+
+        .circle:nth-child(1) {
+
+            width: 300px;
+
+            height: 300px;
+
+            left: -100px;
+
+            top: -100px;
+
+        }
+
+        .circle:nth-child(2) {
+
+            width: 250px;
+
+            height: 250px;
+
+            right: -80px;
+
+            bottom: -80px;
+
+        }
+
+        .circle:nth-child(3) {
+
+            width: 120px;
+
+            height: 120px;
+
+            left: 20%;
+
+            bottom: 10%;
+
+        }
+
+        @keyframes float {
+
+            0% {
+
+                transform: translateY(0);
+
+            }
+
+            50% {
+
+                transform: translateY(-25px);
+
+            }
+
+            100% {
+
+                transform: translateY(0);
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="circle"></div>
+
+    <div class="circle"></div>
+
+    <div class="circle"></div>
+
+    <div class="container">
+
+        <h1>404</h1>
+
+        <h2>Oops! Page Not Found</h2>
+
+        <p>
+
+            The page you're looking for doesn't exist or has been moved.
+
+            Let's get you back to the portfolio.
+
+        </p>
+
+        <a href="index.html" class="btn">Go Back Home</a>
+
+    </div>
+
+</body>
+
+</html>
